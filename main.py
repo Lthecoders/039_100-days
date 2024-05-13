@@ -101,8 +101,8 @@ intro = (f"""\n                                WELCOME TO THE GAME OF\n
 user_picked = []
 
 print(intro)
-print(purple,"\n\nLoading the game....")
-print("\nPlease wait",white)
+print(purple, "\n\nLoading the game....")
+print("\nPlease wait", white)
 time.sleep(5)
 os.system("clear")
 
@@ -115,7 +115,7 @@ print(f"\n{red}{top_logo: ^50} {white}")
 gamer_name = input("\n\n\n\n\nEnter your gaming name? 😎 --> ").strip().upper()
 print(
     blue,
-    "\n\n IMP ---------> The word is releated to animals you have to think which animail is this 😏👍\n",
+    "\n\n IMP ---------> The word is releated to animals you have to think which animail is this by entering the letter 😏👍\n",
     white)
 while True:
 
@@ -139,7 +139,8 @@ while True:
   else:
     print(f"only {userTotal_life} lives are left.")
 
-  userPick_letter = input("\n\nType any letter ---> ").strip().lower()
+  userPick_letter = input(
+      "\n\n (name a type of animal) Type any letter  ---> ").strip().lower()
   if userPick_letter == "":
     print(red, "\nno white space are allowed\n", white)
     continue
